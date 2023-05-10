@@ -1,0 +1,72 @@
+* {
+    font-family: 'sen', sans-serif;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+h3 {
+    color: grey;
+    text-decoration-line: underline;
+}
+
+.caja-1 {
+    color: blanchedalmond;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 30px;
+    background-color: blue;
+    transition: all 2s;
+    border: 5px dashed black;
+}
+
+.caja-1:hover {
+    background: lightblue;
+    height: 300px;
+    width: 300px;
+    border: 5px groove red;
+    
+}
+
+.link-1 {
+    padding: 50px;
+    margin: 30px;
+    background-color: black;
+    display: inline-block;
+    color: red;
+}
+
+a:link {
+    color: white;
+}
+
+.caja-2 {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-color: brown;
+    transition: all 3s;
+}
+
+.caja-2:active {
+    width: 700px;
+    height: 700px;
+    margin: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.relleno {
+    margin: 30px;
+    background: grey;
+    transition: all 2s;
+}
+
+.relleno:focus {
+    background: white;
+    width: 15cm;
+}

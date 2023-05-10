@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FlexBox.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>FlexBox</title>
+</head>
+<body> 
+    <h1>FlexBox</h1>
+    <h3>Flex</h3>
+    <p>Lo que hace <b>Flex (display: flex)</b> es adaptar el contenido a la caja. Intenta a manter a altura en base al 
+    contenido. La relacion nunca cambia. Ejemplo:</p>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta tenetur perferendis, maiores accusamus placeat corporis impedit suscipit tempora, commodi enim repellendus fuga unde repellat eligendi magni aut. Officia, facilis ipsum!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis eos maxime quae sunt commodi? Doloribus fugit odit, impedit voluptas dolore blanditiis quae corrupti magni magnam! Consequuntur ducimus repudiandae inventore modi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus recusandae laudantium adipisci deserunt totam corporis eum possimus dolor, neque dicta inventore vitae sint quis perferendis modi repellendus. Dolorem, iusto praesentium!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, quis officia quas laboriosam ea rem nostrum adipisci libero ducimus earum? Excepturi sapiente optio nemo possimus facere dolor repellendus atque dignissimos!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda magnam, itaque placeat voluptatum minima eveniet harum ex, eligendi perferendis distinctio aut dicta quas odit nobis? Nihil laudantium repellat sequi ea.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quasi aliquid exercitationem ducimus nesciunt, et distinctio, aperiam soluta dolore reiciendis rerum quo quod itaque dolorum, mollitia necessitatibus praesentium obcaecati quos!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, adipisci doloremque. Repudiandae vel illum eius suscipit quaerat deleniti dolore veniam sapiente vitae. Reprehenderit iure asperiores in placeat, consequatur quaerat magnam!
+        </div>
+        <div class="flex-item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorem porro impedit, ex ea maxime aliquam est alias ratione quae consequuntur, nesciunt praesentium. Et assumenda delectus, accusamus vero eveniet est.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut vero aperiam ipsum obcaecati veritatis quae dolore exercitationem tempore impedit facere ad odit magnam, necessitatibus, modi aliquid itaque autem illo.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quos quisquam aliquam, quibusdam nemo numquam fugit rem, necessitatibus maxime quas reprehenderit et obcaecati quae alias laudantium sequi laborum voluptatum qui.
+        </div>
+    </div>
+
+    <h3>Otras propiedades de FlexBox</h3>
+    <p>Otras propiedades de FlexBox son <b>"flex direction: column"</b>. Lo que hace es que las cajas pasan a estar verticalmente.
+        Ejemplo:
+    </p>
+
+    <div class="flex-container-1">
+        <div class="flex-item-1">Caja Flexible 1</div>
+        <div class="flex-item-1">Caja Flexible 2</div>
+        <div class="flex-item-1">Caja Flexible 3</div>
+        <div class="flex-item-1">Caja Flexible 4</div>
+        <div class="flex-item-1">Caja Flexible 5</div>
+    </div>
+
+    <p> Tener en cuenta que por defecto es "row" (alineado horizontalmete). </p>
+    <br>
+
+    <p>
+        Dentro de esta misma se encuentra <b>"flex direction: column reverse"</b>. Lo que hace es 
+            intercambiar los main, en este caso cambia Main axis, rota completamente. Ejemplo:
+    </p>
+
+    <div class="flex-container-2">
+        <div class="flex-item-2 black">Caja Flexible 1</div>
+        <div class="flex-item-2">Caja Flexible 2</div>
+        <div class="flex-item-2">Caja Flexible 3</div>
+        <div class="flex-item-2">Caja Flexible 4</div>
+        <div class="flex-item-2">Caja Flexible 5</div>
+    </div>
+
+    <p>Aplicando <b>"column reverse":</b></p>
+
+    <div class="flex-container-3">
+        <div class="flex-item-2 black">Caja Flexible 1</div>
+        <div class="flex-item-2">Caja Flexible 2</div>
+        <div class="flex-item-2">Caja Flexible 3</div>
+        <div class="flex-item-2">Caja Flexible 4</div>
+        <div class="flex-item-2">Caja Flexible 5</div>
+    </div>
+
+    <p>Otra propiedad presente en flex es el <b>"flex-wrap: wrap"</b>. Lo que hace es respetar el tamaño
+    de una caja por mas que alarguemos o achiquemos la resolucion de la pagina.</p>
+
+    <h3>Alineacion en Flex</h3>
+    <p>Para alinear en flex tenemos varias formas de hacerlo. Para aplicar esta alineacion
+        se utiliza la propiedad <b>"justify-content: ... "</b> Dichas formas son: 
+    </p><br>
+    
+        <p><b>justify-content: center</b></p>
+        <p><b>justify-content: space-arround</b></p>
+        <p><b>justify-content: space-between</b></p>
+        <p><b>justify-content: space-evenly</b></p>
+        <br>
+
+    <h3>Alineacion de Items y Contenido ("align-items" - "align-content)</h3>
+    <p>Para la alineacion ya sea de los items o una caja contendora tenemos la propiedades 
+        <b>"align-items y align-content"</b>. Esta es una buena forma de alinear verticalmente un contenido
+        con varios items dentro de el. La forma de aplica esta propiedad es:
+    </p><br>
+
+        <p><b>align-content/items: center</b></p>
+        <p><b>align-content/items: flex-star</b></p>
+        <p><b>align-content/items: flex-end</b></p>
+        <p><b>align-content/items: stretch</b></p>
+        <p><b>align-content/items: baseline</b></p>
+        <br>
+
+    <h1>Propiedades de los Items (Flex-Items)</h1>
+    <p>Es darle la propiedad al mismo item, tener en cuenta que para que funcione estas propiedades
+        su contenedor tiene que tener la propiedad <b>"display: flex;"</b> sino de lo contrario
+        no tendria sentido. Estas propiedades son:
+    </p><br>
+
+        <p><b>Align-Self</b></p>
+        <p><b>Flex-grow</b></p>
+        <p><b>Flex-shrink</b></p>
+        <p><b>Flex-basis</b></p>
+        <p><b>Flex</b></p>
+        <p><b>Order</b></p>
+        <br>
+
+    <h3>Align-Self</h3>
+    <p>Funciona en el CrosAxis (linea vertical). Mas que todo sirve para alinear los item (flex-star, center,
+        flex-end).
+    </p>
+    <br>
+
+    <h3>Flex-grow</h3>
+    <p>Divide el espacio sobrante en la cantidad de cajas flexibles que tengamos dentro de la caja
+        contenedora. De esta forma quedarian por igual en espacio las cajas dentro de su 
+        contenedor. Para aplicar esta propiedad es <b>"flex-grow: 1;"</b> Ejemplo:
+    </p>
+
+    <div class="flex-container-2">
+        <div class="flex-item-3">Caja Flexible 1</div>
+        <div class="flex-item-3">Caja Flexible 2</div>
+        <div class="flex-item-3">Caja Flexible 3</div>
+        <div class="flex-item-3">Caja Flexible 4</div>
+    </div>
+
+    
+</body>
+</html>

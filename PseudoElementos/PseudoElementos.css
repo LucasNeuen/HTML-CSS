@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    padding: 5px;
+}
+
+p {
+    padding: 7px                   ;
+}
+
+.texto-1::first-line {
+    color: brown;
+}
+
+.texto-2::first-letter {
+    color: blue;
+    font-size: 7em;
+}
+
+form {
+    margin: 50px auto;
+    display: block;
+    padding: 25px;
+    width: 50%;
+    background-color: grey;
+
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: red;
+    font-size: 1.5em;
+}

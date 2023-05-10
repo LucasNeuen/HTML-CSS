@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="PseudoElementos.css">
+
+    <title>PseudoElementos</title>
+</head>
+<body>
+    <h1>PseudoElementos</h1>
+    <p>Los PseudoElementos no fuincionan en lo elementos "Inline Block" en el resto de elementos si. Estos no forman partes del DOM, pero si podemos ver cambios visuales.
+        Para implementar el PseudoElemento se utiliza "::" y el nombre del PseudoElemento que queremos usar. Ejemplo <b>".texto::first-line"</b> 
+        Hay varios tipos de PseudoElementos:</p>
+        <br>
+
+    <h3>PseudoElementos "First-line"</h3>
+    <p>Estos funcionan solo en elementos de bloques. Funciona para darle forma a la primera linea sin importar el tamaño de la paguina.
+        <b>Ejemplo:</b></p>
+    <div class="texto-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt saepe exercitationem fugit, molestias obcaecati tenetur eum nisi voluptatibus quod reprehenderit? Facilis illum rem expedita quod consectetur odio temporibus animi ipsum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni dignissimos culpa quaerat, fuga earum deleniti nulla et dolore, nihil molestiae consequatur quo non? Obcaecati, incidunt? Repellat distinctio modi error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim aperiam suscipit? Dolor illum ipsa placeat, fugit laudantium harum qui est dolorem unde nulla. Numquam ut perferendis omnis maiores voluptate!
+    </div>
+        <br>
+
+    <h3>PseudoElementos "First-letter"</h3>
+    <p>Estos funcionan solo en elementos de bloques. Funciona para darle forma a la primera letra paguina.
+        <b>Ejemplo:</b></p>
+    <div class="texto-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt saepe exercitationem fugit, molestias obcaecati tenetur eum nisi voluptatibus quod reprehenderit? Facilis illum rem expedita quod consectetur odio temporibus animi ipsum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni dignissimos culpa quaerat, fuga earum deleniti nulla et dolore, nihil molestiae consequatur quo non? Obcaecati, incidunt? Repellat distinctio modi error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim aperiam suscipit? Dolor illum ipsa placeat, fugit laudantium harum qui est dolorem unde nulla. Numquam ut perferendis omnis maiores voluptate!
+    </div>
+        <br>
+
+    <h3>PseudoElemento "PlaceHolder"</h3>
+    <p>Funciona para darle estilo a los input. <b>Ejemplo:</b></p>
+    <form>
+        <input type="text" placeholder="Inserte su nombre">
+    </form>
+    
+</body>
+</html>
